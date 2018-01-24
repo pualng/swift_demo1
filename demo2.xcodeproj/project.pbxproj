@@ -16,6 +16,7 @@
 		198701A42018226000A9C575 /* BookmarksListFavoritesFolder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701A32018226000A9C575 /* BookmarksListFavoritesFolder@3x.png */; };
 		198701AB2018233700A9C575 /* FavoritesGridFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701AA2018233600A9C575 /* FavoritesGridFolder.png */; };
 		198701AD2018235B00A9C575 /* FavoritesGridFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701AC2018235B00A9C575 /* FavoritesGridFolder.png */; };
+		198701B12018324E00A9C575 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198701B02018324E00A9C575 /* RecordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		198701A9201822DF00A9C575 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
 		198701AA2018233600A9C575 /* FavoritesGridFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavoritesGridFolder.png; sourceTree = "<group>"; };
 		198701AC2018235B00A9C575 /* FavoritesGridFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FavoritesGridFolder.png; path = "../../../../../../Desktop/未命名檔案夾/FavoritesGridFolder.png"; sourceTree = "<group>"; };
+		198701B02018324E00A9C575 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				198701942018183E00A9C575 /* Assets.xcassets */,
 				198701962018183E00A9C575 /* LaunchScreen.storyboard */,
 				198701992018183E00A9C575 /* Info.plist */,
+				198701B02018324E00A9C575 /* RecordViewController.swift */,
 			);
 			path = demo2;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198701B12018324E00A9C575 /* RecordViewController.swift in Sources */,
 				198701902018183E00A9C575 /* ViewController.swift in Sources */,
 				1987018E2018183E00A9C575 /* AppDelegate.swift in Sources */,
 			);

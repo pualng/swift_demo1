@@ -45,7 +45,7 @@
         <!--紀錄-->
         <scene sceneID="8Ub-mS-X0B">
             <objects>
-                <viewController id="8UZ-zE-R1M" sceneMemberID="viewController">
+                <viewController id="8UZ-zE-R1M" customClass="RecordViewController" customModule="demo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VB0-gn-sTx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,6 +110,9 @@
                         <viewLayoutGuide key="safeArea" id="TaT-a1-4A5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="紀錄" image="FavoritesGridFolder" id="Ohf-wN-4zs"/>
+                    <connections>
+                        <outlet property="txtDate" destination="gTW-60-hs0" id="qjx-pQ-vud"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCz-j1-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +135,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcB-lC-Lfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-402" y="-251"/>
+            <point key="canvasLocation" x="-825" y="-437"/>
         </scene>
     </scenes>
     <resources>
