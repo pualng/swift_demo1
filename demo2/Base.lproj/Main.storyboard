@@ -56,13 +56,16 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="actDateEditing:" destination="8UZ-zE-R1M" eventType="editingDidBegin" id="6gp-kr-GjD"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JiU-ZO-hAz">
                                 <rect key="frame" x="171" y="217" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="XXX" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="tuG-6f-UI8">
                                 <rect key="frame" x="171" y="283" width="175" height="128"/>
@@ -104,6 +107,9 @@
                                 <rect key="frame" x="150" y="485" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="存檔"/>
+                                <connections>
+                                    <action selector="btnSave:" destination="8UZ-zE-R1M" eventType="touchUpInside" id="pvX-g0-8tS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -111,7 +117,10 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="紀錄" image="FavoritesGridFolder" id="Ohf-wN-4zs"/>
                     <connections>
+                        <outlet property="segType" destination="pyl-aH-fbD" id="XLZ-Mp-seU"/>
                         <outlet property="txtDate" destination="gTW-60-hs0" id="qjx-pQ-vud"/>
+                        <outlet property="txtDesc" destination="tuG-6f-UI8" id="WEI-Kz-YTR"/>
+                        <outlet property="txtMoney" destination="JiU-ZO-hAz" id="WF1-zi-XkE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCz-j1-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
