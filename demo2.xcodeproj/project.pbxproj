@@ -12,6 +12,10 @@
 		198701932018183E00A9C575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198701912018183E00A9C575 /* Main.storyboard */; };
 		198701952018183E00A9C575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198701942018183E00A9C575 /* Assets.xcassets */; };
 		198701982018183E00A9C575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198701962018183E00A9C575 /* LaunchScreen.storyboard */; };
+		198701A22018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701A12018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png */; };
+		198701A42018226000A9C575 /* BookmarksListFavoritesFolder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701A32018226000A9C575 /* BookmarksListFavoritesFolder@3x.png */; };
+		198701AB2018233700A9C575 /* FavoritesGridFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701AA2018233600A9C575 /* FavoritesGridFolder.png */; };
+		198701AD2018235B00A9C575 /* FavoritesGridFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701AC2018235B00A9C575 /* FavoritesGridFolder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,11 @@
 		198701942018183E00A9C575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		198701972018183E00A9C575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198701992018183E00A9C575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198701A12018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BookmarksListFavoritesFolder@2x.png"; path = "../../../../../Desktop/未命名檔案夾/@2x/com.apple.SafariServices/BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
+		198701A32018226000A9C575 /* BookmarksListFavoritesFolder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BookmarksListFavoritesFolder@3x.png"; sourceTree = "<group>"; };
+		198701A9201822DF00A9C575 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
+		198701AA2018233600A9C575 /* FavoritesGridFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavoritesGridFolder.png; sourceTree = "<group>"; };
+		198701AC2018235B00A9C575 /* FavoritesGridFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FavoritesGridFolder.png; path = "../../../../../../Desktop/未命名檔案夾/FavoritesGridFolder.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,8 @@
 		1987018C2018183E00A9C575 /* demo2 */ = {
 			isa = PBXGroup;
 			children = (
+				198701A12018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png */,
+				198701A6201822AF00A9C575 /* Images */,
 				1987018D2018183E00A9C575 /* AppDelegate.swift */,
 				1987018F2018183E00A9C575 /* ViewController.swift */,
 				198701912018183E00A9C575 /* Main.storyboard */,
@@ -62,6 +73,17 @@
 				198701992018183E00A9C575 /* Info.plist */,
 			);
 			path = demo2;
+			sourceTree = "<group>";
+		};
+		198701A6201822AF00A9C575 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				198701AC2018235B00A9C575 /* FavoritesGridFolder.png */,
+				198701AA2018233600A9C575 /* FavoritesGridFolder.png */,
+				198701A9201822DF00A9C575 /* BookmarksListFavoritesFolder@2x.png */,
+				198701A32018226000A9C575 /* BookmarksListFavoritesFolder@3x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +145,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				198701A22018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png in Resources */,
 				198701982018183E00A9C575 /* LaunchScreen.storyboard in Resources */,
+				198701A42018226000A9C575 /* BookmarksListFavoritesFolder@3x.png in Resources */,
+				198701AB2018233700A9C575 /* FavoritesGridFolder.png in Resources */,
 				198701952018183E00A9C575 /* Assets.xcassets in Resources */,
 				198701932018183E00A9C575 /* Main.storyboard in Resources */,
+				198701AD2018235B00A9C575 /* FavoritesGridFolder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

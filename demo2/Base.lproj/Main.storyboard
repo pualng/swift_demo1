@@ -20,11 +20,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="q3A-Fu-Ew1"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="查詢" id="8mO-29-YnE"/>
+                    <tabBarItem key="tabBarItem" title="查詢" image="BookmarksListFavoritesFolder" id="8mO-29-YnE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UQ-FB-fjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-78" y="641"/>
+            <point key="canvasLocation" x="-401" y="601"/>
         </scene>
         <!--關於-->
         <scene sceneID="hvU-j2-h9H">
@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmm-gW-Ja7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="641"/>
+            <point key="canvasLocation" x="578" y="600"/>
         </scene>
         <!--紀錄-->
         <scene sceneID="8Ub-mS-X0B">
@@ -52,11 +52,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="TaT-a1-4A5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="紀錄" id="Ohf-wN-4zs"/>
+                    <tabBarItem key="tabBarItem" title="紀錄" image="FavoritesGridFolder" id="Ohf-wN-4zs"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCz-j1-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-930" y="641"/>
+            <point key="canvasLocation" x="-1366" y="601"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Div-YG-Iag">
@@ -75,7 +75,11 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcB-lC-Lfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-930" y="-345"/>
+            <point key="canvasLocation" x="-402" y="-251"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BookmarksListFavoritesFolder" width="21" height="20"/>
+        <image name="FavoritesGridFolder" width="31" height="29"/>
+    </resources>
 </document>
