@@ -7,19 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192CABDF201870A800B5BEBC /* QueryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192CABDE201870A800B5BEBC /* QueryTableViewController.swift */; };
 		1987018E2018183E00A9C575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1987018D2018183E00A9C575 /* AppDelegate.swift */; };
 		198701902018183E00A9C575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1987018F2018183E00A9C575 /* ViewController.swift */; };
 		198701932018183E00A9C575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198701912018183E00A9C575 /* Main.storyboard */; };
 		198701952018183E00A9C575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 198701942018183E00A9C575 /* Assets.xcassets */; };
 		198701982018183E00A9C575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 198701962018183E00A9C575 /* LaunchScreen.storyboard */; };
-		198701A22018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701A12018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png */; };
 		198701A42018226000A9C575 /* BookmarksListFavoritesFolder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701A32018226000A9C575 /* BookmarksListFavoritesFolder@3x.png */; };
 		198701AB2018233700A9C575 /* FavoritesGridFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701AA2018233600A9C575 /* FavoritesGridFolder.png */; };
 		198701AD2018235B00A9C575 /* FavoritesGridFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701AC2018235B00A9C575 /* FavoritesGridFolder.png */; };
 		198701B12018324E00A9C575 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198701B02018324E00A9C575 /* RecordViewController.swift */; };
+		19B7F038201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B7F037201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png */; };
+		19C46F16201E56F0008AF94F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C46F15201E56F0008AF94F /* Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192CABDE201870A800B5BEBC /* QueryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryTableViewController.swift; sourceTree = "<group>"; };
 		1987018A2018183E00A9C575 /* demo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1987018D2018183E00A9C575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1987018F2018183E00A9C575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,12 +30,13 @@
 		198701942018183E00A9C575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		198701972018183E00A9C575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		198701992018183E00A9C575 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		198701A12018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BookmarksListFavoritesFolder@2x.png"; path = "../../../../../Desktop/未命名檔案夾/@2x/com.apple.SafariServices/BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
 		198701A32018226000A9C575 /* BookmarksListFavoritesFolder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BookmarksListFavoritesFolder@3x.png"; sourceTree = "<group>"; };
 		198701A9201822DF00A9C575 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
 		198701AA2018233600A9C575 /* FavoritesGridFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FavoritesGridFolder.png; sourceTree = "<group>"; };
 		198701AC2018235B00A9C575 /* FavoritesGridFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FavoritesGridFolder.png; path = "../../../../../../Desktop/未命名檔案夾/FavoritesGridFolder.png"; sourceTree = "<group>"; };
 		198701B02018324E00A9C575 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		19B7F037201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BookmarksListFavoritesFolder@2x.png"; path = "../BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
+		19C46F15201E56F0008AF94F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			children = (
 				1987018C2018183E00A9C575 /* demo2 */,
 				1987018B2018183E00A9C575 /* Products */,
+				19C46EF5201E5440008AF94F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,7 +70,6 @@
 		1987018C2018183E00A9C575 /* demo2 */ = {
 			isa = PBXGroup;
 			children = (
-				198701A12018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png */,
 				198701A6201822AF00A9C575 /* Images */,
 				1987018D2018183E00A9C575 /* AppDelegate.swift */,
 				1987018F2018183E00A9C575 /* ViewController.swift */,
@@ -74,6 +78,8 @@
 				198701962018183E00A9C575 /* LaunchScreen.storyboard */,
 				198701992018183E00A9C575 /* Info.plist */,
 				198701B02018324E00A9C575 /* RecordViewController.swift */,
+				192CABDE201870A800B5BEBC /* QueryTableViewController.swift */,
+				19C46F15201E56F0008AF94F /* Record.swift */,
 			);
 			path = demo2;
 			sourceTree = "<group>";
@@ -81,12 +87,20 @@
 		198701A6201822AF00A9C575 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				19B7F037201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png */,
 				198701AC2018235B00A9C575 /* FavoritesGridFolder.png */,
 				198701AA2018233600A9C575 /* FavoritesGridFolder.png */,
 				198701A9201822DF00A9C575 /* BookmarksListFavoritesFolder@2x.png */,
 				198701A32018226000A9C575 /* BookmarksListFavoritesFolder@3x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		19C46EF5201E5440008AF94F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,10 +162,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				198701A22018223F00A9C575 /* BookmarksListFavoritesFolder@2x.png in Resources */,
 				198701982018183E00A9C575 /* LaunchScreen.storyboard in Resources */,
 				198701A42018226000A9C575 /* BookmarksListFavoritesFolder@3x.png in Resources */,
 				198701AB2018233700A9C575 /* FavoritesGridFolder.png in Resources */,
+				19B7F038201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png in Resources */,
 				198701952018183E00A9C575 /* Assets.xcassets in Resources */,
 				198701932018183E00A9C575 /* Main.storyboard in Resources */,
 				198701AD2018235B00A9C575 /* FavoritesGridFolder.png in Resources */,
@@ -167,6 +181,8 @@
 			files = (
 				198701B12018324E00A9C575 /* RecordViewController.swift in Sources */,
 				198701902018183E00A9C575 /* ViewController.swift in Sources */,
+				19C46F16201E56F0008AF94F /* Record.swift in Sources */,
+				192CABDF201870A800B5BEBC /* QueryTableViewController.swift in Sources */,
 				1987018E2018183E00A9C575 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
