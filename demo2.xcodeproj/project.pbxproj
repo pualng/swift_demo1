@@ -18,6 +18,7 @@
 		198701AD2018235B00A9C575 /* FavoritesGridFolder.png in Resources */ = {isa = PBXBuildFile; fileRef = 198701AC2018235B00A9C575 /* FavoritesGridFolder.png */; };
 		198701B12018324E00A9C575 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198701B02018324E00A9C575 /* RecordViewController.swift */; };
 		19B7F038201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B7F037201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png */; };
+		19B7F03A201FD70E000AA565 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B7F039201FD70E000AA565 /* RecordTableViewCell.swift */; };
 		19C46F16201E56F0008AF94F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C46F15201E56F0008AF94F /* Record.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		198701AC2018235B00A9C575 /* FavoritesGridFolder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FavoritesGridFolder.png; path = "../../../../../../Desktop/未命名檔案夾/FavoritesGridFolder.png"; sourceTree = "<group>"; };
 		198701B02018324E00A9C575 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		19B7F037201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BookmarksListFavoritesFolder@2x.png"; path = "../BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
+		19B7F039201FD70E000AA565 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		19C46F15201E56F0008AF94F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				198701B02018324E00A9C575 /* RecordViewController.swift */,
 				192CABDE201870A800B5BEBC /* QueryTableViewController.swift */,
 				19C46F15201E56F0008AF94F /* Record.swift */,
+				19B7F039201FD70E000AA565 /* RecordTableViewCell.swift */,
 			);
 			path = demo2;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 			files = (
 				198701B12018324E00A9C575 /* RecordViewController.swift in Sources */,
 				198701902018183E00A9C575 /* ViewController.swift in Sources */,
+				19B7F03A201FD70E000AA565 /* RecordTableViewCell.swift in Sources */,
 				19C46F16201E56F0008AF94F /* Record.swift in Sources */,
 				192CABDF201870A800B5BEBC /* QueryTableViewController.swift in Sources */,
 				1987018E2018183E00A9C575 /* AppDelegate.swift in Sources */,

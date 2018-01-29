@@ -10,14 +10,21 @@ import UIKit
 
 class QueryTableViewController: UITableViewController {
 
+    var data : [Record] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+ 
+        //fake data
+        for i in 1...5{
+            let d  = Record();
+            d.amount = 200+Double(i)
+            d.trade_type = 0
+            d.trade_date = "20171212"
+            d.description="發票中獎"
+            data.append(d)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,17 +41,29 @@ class QueryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 3
+        return data.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as! RecordTableViewCell
+
+        cell.labTradeDate.text = "\(data[indexPath.row].trade_date)"
+
+        cell.labAmount.text = "$ \(data[indexPath.row].amount)"
+
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //
+        print("$ \(data[indexPath.row].amount)")
+        self.performSegue(withIdentifier: "gotodetail", sender: self)
+
+    }
+
     
 
     /*
