@@ -125,7 +125,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCz-j1-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1353" y="475"/>
+            <point key="canvasLocation" x="-1314" y="624"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="I5b-1j-dQG">
+            <objects>
+                <navigationController id="YRS-0R-JvP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="frB-qn-FuI"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qCy-Uh-kNB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="flR-X0-cEV" kind="relationship" relationship="rootViewController" id="UHW-5G-SAZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSB-de-l7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2495" y="-264"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Div-YG-Iag">
@@ -140,14 +157,14 @@
                         <segue destination="8UZ-zE-R1M" kind="relationship" relationship="viewControllers" id="0lt-Nd-dP7"/>
                         <segue destination="4lH-lQ-jVB" kind="relationship" relationship="viewControllers" id="Zpb-tw-Ifd"/>
                         <segue destination="Yyp-2C-gRu" kind="relationship" relationship="viewControllers" id="T0K-7Z-npx"/>
-                        <segue destination="flR-X0-cEV" kind="relationship" relationship="viewControllers" id="IR1-iM-pgO"/>
+                        <segue destination="YRS-0R-JvP" kind="relationship" relationship="viewControllers" id="wxn-Xd-HhM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcB-lC-Lfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-825" y="-437"/>
         </scene>
-        <!--Item-->
+        <!--清單-->
         <scene sceneID="8VE-or-AkU">
             <objects>
                 <tableViewController id="flR-X0-cEV" customClass="QueryTableViewController" customModule="demo2" customModuleProvider="target" sceneMemberID="viewController">
@@ -191,13 +208,20 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="mZR-5e-6cz"/>
+                    <navigationItem key="navigationItem" title="清單" id="kSk-Gy-POX">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="rym-oe-jHH">
+                            <connections>
+                                <segue destination="8UZ-zE-R1M" kind="show" id="F0T-KA-H8K"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="8UZ-zE-R1M" kind="show" identifier="gotodetail" id="FUC-W7-DfR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3L-91-RrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2254" y="475"/>
+            <point key="canvasLocation" x="-2431" y="624"/>
         </scene>
     </scenes>
     <resources>
@@ -205,6 +229,6 @@
         <image name="FavoritesGridFolder" width="31" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="FUC-W7-DfR"/>
+        <segue reference="F0T-KA-H8K"/>
     </inferredMetricsTieBreakers>
 </document>
