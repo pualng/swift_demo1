@@ -19,6 +19,8 @@
 		19B7F038201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B7F037201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png */; };
 		19B7F03A201FD70E000AA565 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B7F039201FD70E000AA565 /* RecordTableViewCell.swift */; };
 		19B7F0D620200ED4000AA565 /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B7F0C920200EBB000AA565 /* SQLite.framework */; };
+		19B7F0DC202015EE000AA565 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B7F0DB202015EE000AA565 /* DBHelper.swift */; };
+		19B7F0DE202018E1000AA565 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B7F0DD202018E1000AA565 /* TestViewController.swift */; };
 		19C46F16201E56F0008AF94F /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C46F15201E56F0008AF94F /* Record.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +92,8 @@
 		19B7F037201FD607000AA565 /* BookmarksListFavoritesFolder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BookmarksListFavoritesFolder@2x.png"; path = "../BookmarksListFavoritesFolder@2x.png"; sourceTree = "<group>"; };
 		19B7F039201FD70E000AA565 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		19B7F0BE20200EBA000AA565 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-0.11.3/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		19B7F0DB202015EE000AA565 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		19B7F0DD202018E1000AA565 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		19C46F15201E56F0008AF94F /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +141,8 @@
 				192CABDE201870A800B5BEBC /* QueryTableViewController.swift */,
 				19C46F15201E56F0008AF94F /* Record.swift */,
 				19B7F039201FD70E000AA565 /* RecordTableViewCell.swift */,
+				19B7F0DB202015EE000AA565 /* DBHelper.swift */,
+				19B7F0DD202018E1000AA565 /* TestViewController.swift */,
 			);
 			path = demo2;
 			sourceTree = "<group>";
@@ -308,7 +314,9 @@
 			files = (
 				198701B12018324E00A9C575 /* RecordViewController.swift in Sources */,
 				198701902018183E00A9C575 /* ViewController.swift in Sources */,
+				19B7F0DE202018E1000AA565 /* TestViewController.swift in Sources */,
 				19B7F03A201FD70E000AA565 /* RecordTableViewCell.swift in Sources */,
+				19B7F0DC202015EE000AA565 /* DBHelper.swift in Sources */,
 				19C46F16201E56F0008AF94F /* Record.swift in Sources */,
 				192CABDF201870A800B5BEBC /* QueryTableViewController.swift in Sources */,
 				1987018E2018183E00A9C575 /* AppDelegate.swift in Sources */,

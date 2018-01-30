@@ -177,11 +177,62 @@
                         <segue destination="foo-pU-BIC" kind="relationship" relationship="viewControllers" id="eMZ-j4-CuS"/>
                         <segue destination="lo5-xl-guD" kind="relationship" relationship="viewControllers" id="Zra-op-vbs"/>
                         <segue destination="79s-Ga-3f6" kind="relationship" relationship="viewControllers" id="9O9-fx-dBO"/>
+                        <segue destination="kVc-wC-Qf2" kind="relationship" relationship="viewControllers" id="16o-cg-fUZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcB-lC-Lfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1490" y="-1423"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="615-GE-37b">
+            <objects>
+                <viewController id="kVc-wC-Qf2" customClass="TestViewController" customModule="demo2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HoR-MX-Tfk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6z-VU-bTY">
+                                <rect key="frame" x="89" y="112" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="btnTest:" destination="kVc-wC-Qf2" eventType="touchUpInside" id="OdK-sg-AhJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nha-HG-Boe">
+                                <rect key="frame" x="89" y="213" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Query"/>
+                                <connections>
+                                    <action selector="btnQuery:" destination="kVc-wC-Qf2" eventType="touchUpInside" id="VkS-yM-uSC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsT-cT-pOt">
+                                <rect key="frame" x="89" y="251" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-Tr-A7Y">
+                                <rect key="frame" x="89" y="170" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Insert"/>
+                                <connections>
+                                    <action selector="btnInsert:" destination="kVc-wC-Qf2" eventType="touchUpInside" id="4lG-qP-q2L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Zzv-dh-fTj"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ByZ-lq-kk5"/>
+                    <connections>
+                        <outlet property="btnQuery" destination="hsT-cT-pOt" id="76b-w1-bzr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMx-KH-b1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-487" y="-1424"/>
         </scene>
         <!--清單-->
         <scene sceneID="8VE-or-AkU">
