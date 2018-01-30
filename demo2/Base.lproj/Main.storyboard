@@ -212,6 +212,9 @@
                                 <rect key="frame" x="89" y="251" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="btnDelete:" destination="kVc-wC-Qf2" eventType="touchUpInside" id="36M-9H-x5h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fF-Tr-A7Y">
                                 <rect key="frame" x="89" y="170" width="46" height="30"/>
@@ -226,9 +229,6 @@
                         <viewLayoutGuide key="safeArea" id="Zzv-dh-fTj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="ByZ-lq-kk5"/>
-                    <connections>
-                        <outlet property="btnQuery" destination="hsT-cT-pOt" id="76b-w1-bzr"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZMx-KH-b1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

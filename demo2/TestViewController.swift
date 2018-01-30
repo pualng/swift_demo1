@@ -25,10 +25,13 @@ class TestViewController: UIViewController {
     }
     
     @IBAction func btnTest(_ sender: Any) {
-        print("test!!!")
+      //for delete test
+        let data = dbHelper.findAll()
+        let last = data[data.count-1]  //last one
+        //ex: 0 1 2 3 4  -> count =5 , last index = 4 , lastindex = count -1
         
-        dbHelper = DBHelper.init()  //這行多餘的
-        
+        last.amount = 999
+        dbHelper.update(record: last)
     }
     
     @IBAction func btnInsert(_ sender: Any) {
@@ -46,14 +49,23 @@ class TestViewController: UIViewController {
         //print(arr.count)  //show count for check
         
         //full scan data by for loop
-        for i  in 1...arr.count-1{
+        for i  in 0...arr.count-1{
             print(arr[i].id);
-            print(arr[i].description);
+            print(arr[i].amount);
         }
     }
     
     
-    @IBOutlet weak var btnQuery: UIButton!
+    @IBAction func btnDelete(_ sender: Any) {
+        
+        //for delete test
+        let data = dbHelper.findAll()
+        let last = data[data.count-1]  //last one
+        //ex: 0 1 2 3 4  -> count =5 , last index = 4 , lastindex = count -1
+        dbHelper.delete(index: last.id)
+        
+    }
+    
     
     /*
     // MARK: - Navigation

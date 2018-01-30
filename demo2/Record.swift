@@ -17,12 +17,10 @@ class Record{
     var description  :String=""
     var photo_path  :String=""
     
-    //init() ；  //.h
-    init(){}  ;// .cpp 實作檔
     
-
-    
- 
+    init(){
+        
+    }
     
     init(trade_type :Int64,trade_date :String,amount :Double){
         

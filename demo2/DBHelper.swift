@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SQLite
+import SQLite  //sqlite.swift  0.11.3
 
 
 class DBHelper{
@@ -111,6 +111,56 @@ class DBHelper{
             print("Error : \(error)")
         }
         return result
+    }
+    
+    //查詢指定ID資料
+    func find(index:Int64)->Record{
+        var result : Record?
+        do{
+            let cmd = records.filter(id == index)
+            if let item = try db!.pluck(cmd){
+                result =  Record(id: item[id],
+                                 trade_type: item[trade_type],
+                                 trade_date :item[trade_date],
+                                 amount:item[amount],
+                                 description:item[description]!,
+                                 photo_path:item[photo_path]!)
+            }
+        }catch{
+            print("Error : \(error)")
+        }
+        return result!
+    }
+    
+    //更新
+    func update(record:Record){
+        do{
+            let temp = records.filter(id == record.id)
+            let cmd = temp.update( trade_type<-record.trade_type,
+                                   trade_date<-record.trade_date,
+                                   amount<-record.amount,
+                                   description<-record.description,
+                                   photo_path<-record.photo_path)
+            
+            print(cmd.asSQL())
+            try db!.run(cmd)
+            
+        }catch{
+            print("Error : \(error)")
+        }
+    }
+    
+    //刪除
+    func delete(index:Int64!){
+        do{
+            let qry = " DELETE FROM records WHERE id=" + String(index)
+            try db!.run(qry)
+            //let cmd = records.filter(id == index)
+            //let result = cmd.delete()
+            //print("Result : \(result)");
+        }catch{
+            print("Error : \(error)")
+        }
     }
     
 }
