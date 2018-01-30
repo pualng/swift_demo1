@@ -12,6 +12,7 @@ class QueryTableViewController: UITableViewController {
 
     var data : [Record] = []
     
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 

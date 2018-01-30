@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--查詢-->
+        <!--設定-->
         <scene sceneID="8Sk-C2-s9F">
             <objects>
                 <viewController id="4lH-lQ-jVB" sceneMemberID="viewController">
@@ -21,28 +21,47 @@
                         <viewLayoutGuide key="safeArea" id="q3A-Fu-Ew1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="查詢" image="BookmarksListFavoritesFolder" id="8mO-29-YnE"/>
+                    <navigationItem key="navigationItem" title="設定" id="eE2-Je-eA3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0UQ-FB-fjj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-401" y="601"/>
+            <point key="canvasLocation" x="-274" y="600"/>
         </scene>
-        <!--關於-->
-        <scene sceneID="hvU-j2-h9H">
+        <!--設定-->
+        <scene sceneID="T3a-oL-VEs">
             <objects>
-                <viewController id="Yyp-2C-gRu" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vpj-m7-3kZ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="dDE-OP-LNf"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="關於" id="A5g-tB-TuT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmm-gW-Ja7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="79s-Ga-3f6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="設定" id="1Ql-aB-L0Q"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sNs-7Z-1Zl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4lH-lQ-jVB" kind="relationship" relationship="rootViewController" id="QtQ-0C-sbq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L0R-5Q-doY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="578" y="600"/>
+            <point key="canvasLocation" x="-274" y="-285"/>
         </scene>
-        <!--紀錄-->
+        <!--新增-->
+        <scene sceneID="gCa-VQ-qQ8">
+            <objects>
+                <navigationController id="lo5-xl-guD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="新增" image="FavoritesGridFolder" id="H7s-Q5-UJJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RMk-Y1-tUI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8UZ-zE-R1M" kind="relationship" relationship="rootViewController" id="o2N-Me-9Yl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TM8-3A-oZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1490" y="-284"/>
+        </scene>
+        <!--新增一筆資訊-->
         <scene sceneID="8Ub-mS-X0B">
             <objects>
                 <viewController id="8UZ-zE-R1M" customClass="RecordViewController" customModule="demo2" customModuleProvider="target" sceneMemberID="viewController">
@@ -116,6 +135,7 @@
                         <viewLayoutGuide key="safeArea" id="TaT-a1-4A5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="紀錄" image="FavoritesGridFolder" id="Ohf-wN-4zs"/>
+                    <navigationItem key="navigationItem" title="新增一筆資訊" id="zPM-Gn-x40"/>
                     <connections>
                         <outlet property="segType" destination="pyl-aH-fbD" id="XLZ-Mp-seU"/>
                         <outlet property="txtDate" destination="gTW-60-hs0" id="qjx-pQ-vud"/>
@@ -125,7 +145,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCz-j1-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1314" y="624"/>
+            <point key="canvasLocation" x="-1490" y="600"/>
+        </scene>
+        <!--查詢-->
+        <scene sceneID="IIf-j3-quK">
+            <objects>
+                <navigationController id="foo-pU-BIC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="查詢" image="BookmarksListFavoritesFolder" id="8jh-D3-U3Z"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kc4-Ou-2qz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="flR-X0-cEV" kind="relationship" relationship="rootViewController" id="qg5-Vg-aWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsW-yN-G19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2586" y="-285"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Div-YG-Iag">
@@ -137,15 +174,14 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8UZ-zE-R1M" kind="relationship" relationship="viewControllers" id="0lt-Nd-dP7"/>
-                        <segue destination="4lH-lQ-jVB" kind="relationship" relationship="viewControllers" id="Zpb-tw-Ifd"/>
-                        <segue destination="Yyp-2C-gRu" kind="relationship" relationship="viewControllers" id="T0K-7Z-npx"/>
-                        <segue destination="flR-X0-cEV" kind="relationship" relationship="viewControllers" id="Dzc-WV-bx4"/>
+                        <segue destination="foo-pU-BIC" kind="relationship" relationship="viewControllers" id="eMZ-j4-CuS"/>
+                        <segue destination="lo5-xl-guD" kind="relationship" relationship="viewControllers" id="Zra-op-vbs"/>
+                        <segue destination="79s-Ga-3f6" kind="relationship" relationship="viewControllers" id="9O9-fx-dBO"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PcB-lC-Lfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-825" y="-437"/>
+            <point key="canvasLocation" x="-1490" y="-1423"/>
         </scene>
         <!--清單-->
         <scene sceneID="8VE-or-AkU">
@@ -198,7 +234,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3L-91-RrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2431" y="624"/>
+            <point key="canvasLocation" x="-2586" y="600"/>
         </scene>
     </scenes>
     <resources>
@@ -206,6 +242,6 @@
         <image name="FavoritesGridFolder" width="31" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0lt-Nd-dP7"/>
+        <segue reference="o2N-Me-9Yl"/>
     </inferredMetricsTieBreakers>
 </document>
