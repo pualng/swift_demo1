@@ -123,11 +123,21 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7h-O5-1gz">
-                                <rect key="frame" x="150" y="485" width="46" height="30"/>
+                                <rect key="frame" x="58" y="538" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="存檔"/>
                                 <connections>
                                     <action selector="btnSave:" destination="8UZ-zE-R1M" eventType="touchUpInside" id="pvX-g0-8tS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpK-bt-0My">
+                                <rect key="frame" x="250" y="538" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="刪除">
+                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDelClick:" destination="8UZ-zE-R1M" eventType="touchUpInside" id="ntk-fT-NkN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -137,6 +147,7 @@
                     <tabBarItem key="tabBarItem" title="紀錄" image="FavoritesGridFolder" id="Ohf-wN-4zs"/>
                     <navigationItem key="navigationItem" title="新增一筆資訊" id="zPM-Gn-x40"/>
                     <connections>
+                        <outlet property="btnDel" destination="BpK-bt-0My" id="XJK-2S-vHh"/>
                         <outlet property="segType" destination="pyl-aH-fbD" id="XLZ-Mp-seU"/>
                         <outlet property="txtDate" destination="gTW-60-hs0" id="qjx-pQ-vud"/>
                         <outlet property="txtDesc" destination="tuG-6f-UI8" id="WEI-Kz-YTR"/>
