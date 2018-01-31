@@ -16,7 +16,7 @@ class RecordViewController: UIViewController {
     @IBOutlet weak var txtMoney: UITextField!
     @IBOutlet weak var txtDesc: UITextView!
     //變數
-    var source : Record? = nil
+    var source : Record? = nil  // ？  c# nullable
 
     //Lift Cycle
     override func viewDidLoad() {
@@ -25,6 +25,7 @@ class RecordViewController: UIViewController {
             txtDate.text = source!.trade_date
             txtMoney.text = "\(source!.amount)"
             txtDesc.text = source!.description
+            segType.selectedSegmentIndex = Int(source!.trade_type)
         }
     }
 
@@ -65,19 +66,28 @@ class RecordViewController: UIViewController {
     //Action
     @IBAction func btnSave(_ sender: Any) {
         print("save...")
-        //txtMoney.text = "1000000"
+        //檢查
+        //error --> Alert
+        
+        
+        
+        //存入資料
+        let dbh : DBHelper = DBHelper.init()  //取得協助方法
         //判斷是 新增 還是編輯？
         if(source == nil){  //新增
-            
+            let r = Record()
+            r.amount = Double(txtMoney.text!)!
+            r.trade_date = txtDate.text!
+            r.description = txtDesc.text!
+            r.trade_type = Int64(segType.selectedSegmentIndex)
+              //dbh.insert(record: r)  //會跳出警告
+            _ = dbh.insert(record: r)  //改成 _下底線
         }else{  //編輯
-            
-            let dbh : DBHelper = DBHelper.init()  //取得協助方法
-            
             //更新資料
             source!.trade_date = txtDate.text!
             source!.amount = Double(txtMoney.text!)!
-            source?.description = txtDesc.text!
-            
+            source!.description = txtDesc.text!
+            source!.trade_type = Int64(segType.selectedSegmentIndex)
             dbh.update(record: source!) //update
         }
         

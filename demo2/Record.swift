@@ -33,7 +33,7 @@ class Record{
     }
     
     
-    init(id:Int64,trade_type :Int64,trade_date :String,amount :Double,description  :String,photo_path  :String){
+  init(id:Int64,trade_type :Int64,trade_date :String,amount :Double,description  :String,photo_path  :String){
         
         self.id=id
         self.trade_type = trade_type
