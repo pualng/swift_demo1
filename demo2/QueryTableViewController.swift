@@ -9,25 +9,26 @@
 import UIKit
 
 class QueryTableViewController: UITableViewController {
-
+    //outlet
+    @IBOutlet var tbvData: UITableView!
+    //變數區
     var data : [Record] = []
+    var dbHelper : DBHelper = DBHelper()
     
-   
+    var dateToSend : Record? = nil //提供給 傳遞資料用
+
+    //【生命週期】 視窗建立的時呼叫（只有一次）
     override func viewDidLoad() {
         super.viewDidLoad()
-
- 
-        //fake data
-        for i in 1...5{
-            let d  = Record();
-            d.amount = 200+Double(i)
-            d.trade_type = 0
-            d.trade_date = "20171212"
-            d.description="發票中獎"
-            data.append(d)
-        }
     }
-
+    //【生命週期】 畫面重載時呼叫 （ex:跳去A畫面在返回）
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        //正式資料
+        data = dbHelper.findAll()
+        self.tbvData.reloadData()
+    }
+    //【生命週期】 記憶體釋放的時候 - 準備關閉
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -59,8 +60,9 @@ class QueryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
-        print("$ \(data[indexPath.row].amount)")
+
+        dateToSend = data[indexPath.row] //暫存
+        //呼叫線路傳遞
         self.performSegue(withIdentifier: "gotodetail", sender: self)
 
     }
@@ -102,14 +104,18 @@ class QueryTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        //取得目標型態
+        let dest = segue.destination as! RecordViewController
+   
+        dest.source = dateToSend
+        
     }
-    */
+    
 
 }

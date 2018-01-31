@@ -54,7 +54,7 @@ class DBHelper{
             //組合SQL語法
             let cmd  = records.create(ifNotExists:true){
                 t in
-                t.column(id, primaryKey: true)
+                t.column(id, primaryKey : .autoincrement)
                 t.column(trade_type)
                 t.column(trade_date)
                 t.column(amount)

@@ -16,14 +16,16 @@ class RecordViewController: UIViewController {
     @IBOutlet weak var txtMoney: UITextField!
     @IBOutlet weak var txtDesc: UITextView!
     //變數
-
+    var source : Record? = nil
 
     //Lift Cycle
     override func viewDidLoad() {
-        super.viewDidLoad()  //呼叫  UIViewController.viewDidLoad  (父類別的Functino)
-
-        // Do any additional setup after loading the view.
-        
+        super.viewDidLoad()
+        if(source != nil){  //有人傳值進來，這是編輯模式
+            txtDate.text = source!.trade_date
+            txtMoney.text = "\(source!.amount)"
+            txtDesc.text = source!.description
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,7 +65,22 @@ class RecordViewController: UIViewController {
     //Action
     @IBAction func btnSave(_ sender: Any) {
         print("save...")
-        txtMoney.text = "1000000"
+        //txtMoney.text = "1000000"
+        //判斷是 新增 還是編輯？
+        if(source == nil){  //新增
+            
+        }else{  //編輯
+            
+            let dbh : DBHelper = DBHelper.init()  //取得協助方法
+            
+            //更新資料
+            source!.trade_date = txtDate.text!
+            source!.amount = Double(txtMoney.text!)!
+            source?.description = txtDesc.text!
+            
+            dbh.update(record: source!) //update
+        }
+        
     }
     
     /*

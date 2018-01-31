@@ -280,6 +280,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="mZR-5e-6cz"/>
                     <navigationItem key="navigationItem" title="清單" id="kSk-Gy-POX"/>
                     <connections>
+                        <outlet property="tbvData" destination="3Ki-SS-m11" id="hfE-GS-mm8"/>
                         <segue destination="8UZ-zE-R1M" kind="show" identifier="gotodetail" id="FUC-W7-DfR"/>
                     </connections>
                 </tableViewController>
@@ -293,6 +294,6 @@
         <image name="FavoritesGridFolder" width="31" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="o2N-Me-9Yl"/>
+        <segue reference="FUC-W7-DfR"/>
     </inferredMetricsTieBreakers>
 </document>
