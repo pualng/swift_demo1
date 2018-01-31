@@ -52,6 +52,8 @@ class TestViewController: UIViewController {
         for i  in 0...arr.count-1{
             print(arr[i].id);
             print(arr[i].amount);
+            print(arr[i].photo_path);
+
         }
     }
     

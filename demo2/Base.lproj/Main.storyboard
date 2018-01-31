@@ -123,7 +123,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7h-O5-1gz">
-                                <rect key="frame" x="58" y="538" width="46" height="30"/>
+                                <rect key="frame" x="53" y="568" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="存檔"/>
                                 <connections>
@@ -131,13 +131,25 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BpK-bt-0My">
-                                <rect key="frame" x="250" y="538" width="46" height="30"/>
+                                <rect key="frame" x="250" y="568" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="刪除">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnDelClick:" destination="8UZ-zE-R1M" eventType="touchUpInside" id="ntk-fT-NkN"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQz-Tc-9ah">
+                                <rect key="frame" x="171" y="419" width="175" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBg-SH-obO">
+                                <rect key="frame" x="55" y="419" width="67" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="選擇圖片"/>
+                                <connections>
+                                    <action selector="btnImage:" destination="8UZ-zE-R1M" eventType="touchUpInside" id="s2w-ie-0TN"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -148,6 +160,7 @@
                     <navigationItem key="navigationItem" title="新增一筆資訊" id="zPM-Gn-x40"/>
                     <connections>
                         <outlet property="btnDel" destination="BpK-bt-0My" id="XJK-2S-vHh"/>
+                        <outlet property="imgView" destination="CQz-Tc-9ah" id="Onf-1u-KSX"/>
                         <outlet property="segType" destination="pyl-aH-fbD" id="XLZ-Mp-seU"/>
                         <outlet property="txtDate" destination="gTW-60-hs0" id="qjx-pQ-vud"/>
                         <outlet property="txtDesc" destination="tuG-6f-UI8" id="WEI-Kz-YTR"/>
@@ -156,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CCz-j1-AgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1490" y="600"/>
+            <point key="canvasLocation" x="-1490.4000000000001" y="599.55022488755628"/>
         </scene>
         <!--查詢-->
         <scene sceneID="IIf-j3-quK">
@@ -262,7 +275,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2017/12/12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gb0-Dy-bfE">
-                                            <rect key="frame" x="115" y="11" width="86" height="21"/>
+                                            <rect key="frame" x="115" y="11" width="115" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -297,7 +310,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3L-91-RrS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2586" y="600"/>
+            <point key="canvasLocation" x="-2586.4000000000001" y="599.55022488755628"/>
         </scene>
     </scenes>
     <resources>
