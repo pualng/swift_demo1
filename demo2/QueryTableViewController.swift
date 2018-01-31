@@ -11,6 +11,7 @@ import UIKit
 class QueryTableViewController: UITableViewController {
     //outlet
     @IBOutlet var tbvData: UITableView!
+    
     //變數區
     var data : [Record] = []
     var dbHelper : DBHelper = DBHelper()
@@ -55,6 +56,22 @@ class QueryTableViewController: UITableViewController {
 
         cell.labAmount.text = "$ \(data[indexPath.row].amount)"
 
+        
+        //cell.imgView.image = img;
+        if(!data[indexPath.row].photo_path.isEmpty){  //表示有圖片，/抓出來show
+            //產生path
+            let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let filePath = documentsURL.appendingPathComponent("\(String(describing: data[indexPath.row].photo_path))").path
+            
+            //檢查path 是否存在
+            if FileManager.default.fileExists(atPath: filePath) {
+                print("img:\(filePath)")
+                let img = UIImage(contentsOfFile: filePath)  //讀檔
+                cell.imageView?.image = img;
+            }
+            
+        }
+        
 
         return cell
     }
